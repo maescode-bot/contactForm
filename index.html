@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<style>
+		.container{
+			width: 50%;
+			margin: auto;
+		}
+       
+       form label{
+       	font-weight: bolder;
+       }
+       form div{
+       	margin-top:1em;
+       }
+       form div input[type=text],input[type=email],textarea{
+       	width: 50%;
+       	height: 40px;
+       	border-radius: 3px;
+       	border: solid 1px gray;
+       }
+       textarea{
+       	height: 100px!important;
+       }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Start NG Php Task</h2>
+		<h3>Contact Form</h3>
+		<form action="action.php" method="post">
+			<div>
+				<label for="first_name">First Name</label><br />
+				 <input type="text" name="first_name" placeholder=" Enter Your First Name" />
+			</div>
+
+			<div>
+				<label for="last_name">Last Name</label><br />
+				 <input type="text" name="last_name" placeholder=" Enter Your Last Name" />
+			</div>
+
+			<div>
+				<label for="email">Email</label><br />
+				<input type="email" name="email" placeholder=" Enter Your Email" required />
+			</div>
+
+		      <div>
+		            <label for="department">Department</label><br />
+
+		             <select name="department">
+		                <option value="HR">HR</option>
+		                <option value="Marketing">Marketing</option>
+		                <option value="Board">Board </option>
+		                <option value="kitchen">Kitchen</option>
+		              </select>
+		     </div>
+		    
+		    <div>
+				<label for="gender">Gender</label><br />
+				<input type="radio" name="gender" value="female"/> Female 
+		        <input type="radio" name="gender" value="male"/> Male
+			</div>
+			<div>
+				<label for="email">Your Message</label><br />
+				<textarea name="message" col="5" row="20"></textarea>
+			</div>
+		   <div>
+			
+		    <input type="checkbox" name="terms" value="I Agree" required /> By Checking this box you agree to our terms and conditions
+		              
+		  </div>
+		  <div>
+		  	  <button type="submit" name="submit" value="submit">Send Message</button>
+		  </div>
+		</form>
+	</div>
+</body>
+</html>
